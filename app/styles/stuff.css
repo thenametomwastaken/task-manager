@@ -227,7 +227,7 @@ header {
   box-shadow: 2px 2px 11px 0 rgba(0, 0, 0, 0.1);
 }
 .project-header {
-  background-color: #FF7954;
+  background-color: #39B552;
   padding: 1em 1em;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -295,7 +295,7 @@ header {
   padding-bottom: 2em;
 }
 .nav-btn:hover {
-  color: #FF7954;
+  color: #39B552;
 }
 .page-heading {
   color: #384047;
@@ -364,7 +364,7 @@ header {
 }
 
 .comment-header {
-  background-color: #677480;
+  background-color: #39B552;
   padding: 0.5em;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -375,7 +375,7 @@ header {
 }
 
 .comment-content {
-  background-color: #f7f7f7;
+  background-color: #edeff0;
   padding: 1em 0.5em;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;

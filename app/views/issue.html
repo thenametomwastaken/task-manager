@@ -16,7 +16,7 @@
         <p class="pad-sm-tb">{{issue.description}}</p>
     </div>
 
-	<div ng-if="issue.reproductionSteps.length !== 0">
+	<div ng-if="issue.reproductionSteps.length !== 0 || issue.reproductionSteps === undefined">
 		<h4 class="page-subheadings">How to reproduce</h4>
     	<div class="project-detail shadow">
     		<ul class="repro-list">
