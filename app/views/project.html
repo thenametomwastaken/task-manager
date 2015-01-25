@@ -1,0 +1,41 @@
+<div class="projects-container">
+    
+    <h3 class="page-heading"><i class="fa fa-cube"></i> &nbsp; {{project.title}}</h3>
+    <hr>
+
+    <h4 class="page-subheadings">Summary</h4>
+
+    <div class="project-detail shadow">
+        <!-- <p class="pad-sm-tb">{{project.description}}</p> -->
+        <p class="pad-sm-tb">This project has <strong>{{project.issues}}</strong> issues. There are <strong>{{project.contributors}}</strong> people contributing to the project, <strong>{{project.watchers}}</strong> people interested in the project and the last activity was <strong>{{project.lastActivity}}</strong>.</p>
+    </div>
+
+    <h4 class="page-subheadings">Issues</h4>
+
+    <div class="project-detail shadow">
+        <div ng-if="issues.length === 0">
+            <h5>No issues or tasks created yet. Be the first to create one. Use the button below.</h5>
+        </div>
+
+        <ul class="issues-list">
+            <li class="issues-list-entry" ng-repeat="issue in issues" ng-click="goToIssue(issue.id)">
+                <div class="units-row reset-row">
+                    <div issue-type type="{{issue.type}}" color="true"></div>
+                    <div class="unit-70">
+                        <span>{{issue.title}}</span>
+                        <p class="opened">Opened by {{issue.openedBy}} on {{issue.openedDate}}</p>
+                    </div>
+                    <div class="unit-20">
+                        {{issue.assignee}}
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="project-new">
+        <button class="btn btn-blue shadow" id="show-modal"
+                data-tools="modal" data-width="700" data-title="Modal Header" data-content="/modal.html">
+                <i class="fa fa-plus"></i> &nbsp; Create New Issue/Task
+        </button>
+    </div>
+</div>

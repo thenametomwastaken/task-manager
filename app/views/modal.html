@@ -1,0 +1,10 @@
+<script>
+$(function()
+{
+	$('#show-modal').on('loading.tools.modal', function()
+	{
+		this.createCancelButton('Cancel');
+		this.createActionButton('Save');
+	});
+});
+</script>
